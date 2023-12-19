@@ -17,6 +17,10 @@ export const resList = [
             fee: 3100,
           },
           {
+            name: 'BASE_LOCATION',
+            fee: 3500,
+          },
+          {
             name: 'BASE_TIME',
           },
           {
