@@ -4,11 +4,13 @@ import { SWIGGY_API_URL } from '../utils/constants';
 import Shimmer from './Shimmer';
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
+  // console.log('🚀listOfRestaurants:', listOfRestaurants);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
 
   const [searchText, setSearchText] = useState('');
 
   console.log('Body Rendered');
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -18,10 +20,10 @@ const Body = () => {
     const json = await data.json();
 
     setListOfRestaurants(
-      json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
     setFilteredRestaurants(
-      json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
 
