@@ -11,3 +11,6 @@ export const LOGO_URL =
 export const SWIGGY_API_URL =
   'https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.077503259910518&lng=72.53723077476025&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING';
 export const SHIMMER_CARD_UNIT = 20;
+
+export const MENU_API =
+  'https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=23.077503259910518&lng=72.53723077476025&restaurantId=';
