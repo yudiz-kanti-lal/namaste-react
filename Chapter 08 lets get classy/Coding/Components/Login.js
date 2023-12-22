@@ -39,7 +39,7 @@ const Login = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.email}
-                  placeholder='Enter email address'
+                  placeholder='Enter email Address'
                   className='form-control inp_text'
                   id='email'
                 />
