@@ -14,3 +14,9 @@ export const SHIMMER_CARD_UNIT = 20;
 
 export const MENU_API =
   'https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=23.077503259910518&lng=72.53723077476025&restaurantId=';
+
+// Github - username
+export const Github_UserName = 'kanti-lal';
+
+// Github API for User
+export const Github_API_User = 'https://api.github.com/users/';
