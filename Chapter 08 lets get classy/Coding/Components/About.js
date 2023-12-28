@@ -1,4 +1,3 @@
-import User from './User';
 import UserClass from './UserClass';
 import React from 'react';
 
@@ -18,18 +17,24 @@ class About extends React.Component {
       <div>
         <h1>About</h1>
         <h2>This is Namaste React Web series</h2>
-        <User
-          name={'Kranti Jangid (Function)'}
-          location={'Ahmedabad (function)'}
+        {/**
+       <User
+         name={'Kranti Jangid (Function)'}
+         location={'Ahmedabad (function)'}
+       />
+      */}
+        <UserClass
+          name={'First'}
+          location={'Ahmedabad (class)'}
+          avatar_url=''
         />
-        <UserClass name={'First'} location={'Ahmedabad (class)'} />
       </div>
     );
   }
 }
 
 {
-  // How render method works (** important)
+  // How render method works (** Important )
   /**
 - Parent Constructor
 - Parent render
@@ -46,7 +51,6 @@ class About extends React.Component {
     - Second child componet didMount
 
 - Parent component didMount
-
 
 */
 }

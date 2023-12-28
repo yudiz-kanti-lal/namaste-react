@@ -19,6 +19,7 @@ const User = ({ name, location }) => {
 
   // console.log('render');
 
+  useEffect(() => {},[count]);
   return (
     <div className='user-card'>
       <h1>Count : {count}</h1>

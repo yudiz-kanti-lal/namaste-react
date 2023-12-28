@@ -7,31 +7,32 @@ class UserClass extends React.Component {
     this.state = {
       userInfo: {
         name: 'Dummy',
-        locatio: 'Default',
-        avatar_url: '',
+        location: 'Default',
+        avatar_url:
+          'https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg',
       },
     };
-    // console.log('Child constructor');
+    // console.log(this.props.name + ' Child constructor');
   }
 
   async componentDidMount() {
     // this.timer = setInterval(() => {
     //   console.log('Namaste React OP');
     // }, 1000);
-    // console.log('Child componentDidMount');
-    const data = await fetch(Github_API_User + Github_UserName);
+    console.log(this.props.name + ' Child componentDidMount');
+    // const data = await fetch(Github_API_User + Github_UserName);
 
-    const json = await data.json();
+    // const json = await data.json();
 
-    this.setState({
-      userInfo: json,
-    });
+    // this.setState({
+    //   userInfo: json,
+    // });
 
-    console.log('🚀json:', json);
+    // console.log('🚀json:', json);
   }
 
   componentDidUpdate() {
-    // console. log('component didUpdate');
+    // console.log(this.props.name + ' Childcomponent didUpdate');
   }
 
   componentWillUnmount() {
@@ -41,7 +42,7 @@ class UserClass extends React.Component {
 
   render() {
     const { name, location, avatar_url } = this.state.userInfo;
-    console.log('Child render');
+    // console.log(this.props.name + ' Child render');
     return (
       <div className='user-card'>
         <img className='profile' src={avatar_url} alt='profile image' />
